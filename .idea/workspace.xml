@@ -2,18 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7440bcea-c0aa-4610-92eb-bf0b3b266888" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exerciseRealEstate.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bd/sql.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/classes/BO/PeopleBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/classes/BO/StageBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/classes/DAO/PeopleDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/classes/DAO/StageDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/classes/DTO/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/classes/DTO/Building.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/classes/DTO/Deal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/classes/DTO/Funnel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/classes/DTO/Lead.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/classes/DTO/People.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/classes/DTO/PeopleLeads.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/classes/DTO/Permission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/classes/DTO/Stage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/classes/DTO/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/classes/DTO/owner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/classes/connection/ConnctionReal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -22,15 +42,20 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2HmnCzqz4b8RmLwE9ONfj2BmAtb" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/tudo/2022/POO1/codigos"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -54,5 +79,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
