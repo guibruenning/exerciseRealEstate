@@ -1,22 +1,11 @@
 package com.classes.DTO;
+public class Deal extends People {
 
-public class Deal {
-
-	private int id;
+	private int idDeal;
 
 	private float amount;
 
-	private String name;
-
-	private PeopleLeads renter;
-
-	private Building building;
-
-	private User broker;
-
-	private Funnel funnel;
-
-	public void createPeople(int lastIdPeople, String name, String email, int telephone) {
+	public void createPeople(int lastIdPeople, Person newPerson) {
 
 	}
 
@@ -24,4 +13,29 @@ public class Deal {
 		return false;
 	}
 
+	public int getIdDeal() {
+		return idDeal;
+	}
+
+	public void setIdDeal(int idDeal) {
+		this.idDeal = idDeal;
+	}
+
+	public float getAmount() {
+		return amount;
+	}
+
+	public void setAmount(float amount) {
+		this.amount = amount;
+	}
+
+	@Override
+	public String toString() {
+		final StringBuilder sb = new StringBuilder("com.classes.DTO.Deal{");
+		sb.append("idDeal=").append(idDeal);
+		sb.append(", amount=").append(amount);
+		sb.append(", ").append(super.toString());
+		sb.append('}');
+		return sb.toString();
+	}
 }

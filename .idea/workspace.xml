@@ -1,27 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="7440bcea-c0aa-4610-92eb-bf0b3b266888" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bd/sql.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/classes/BO/PeopleBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/classes/BO/StageBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/classes/DAO/PeopleDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/classes/DAO/StageDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/classes/DTO/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/classes/DTO/Building.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/classes/DTO/Deal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/classes/DTO/Funnel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/classes/DTO/Lead.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/classes/DTO/People.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/classes/DTO/PeopleLeads.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/classes/DTO/Permission.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/classes/DTO/Stage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/classes/DTO/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/classes/DTO/owner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/classes/connection/ConnctionReal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diagram/Class Diagram0.asta.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diagram/ER.mwb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diagram/ER.mwb.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/classes/DTO/typePerson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/enums/Origin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagram/Class Diagram0.asta" beforeDir="false" afterPath="$PROJECT_DIR$/diagram/Class Diagram0.asta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bd/sql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/bd/sql.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/classes/BO/PeopleBO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/classes/DAO/PeopleDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/classes/DTO/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/classes/DTO/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/classes/DTO/Building.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/classes/DTO/Building.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/classes/DTO/Deal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/classes/DTO/Deal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/classes/DTO/Funnel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/classes/DTO/Funnel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/classes/DTO/Lead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/classes/DTO/Lead.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/classes/DTO/People.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/classes/DTO/People.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/classes/DTO/PeopleLeads.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/classes/DTO/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/classes/DTO/Permission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/classes/DTO/Permission.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/classes/DTO/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/classes/DTO/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/classes/DTO/owner.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +35,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -55,7 +59,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/tudo/2022/POO1/codigos"
+    "last_opened_file_path": "C:/tudo/2022/POO1/codigos/enum"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
