@@ -4,28 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7440bcea-c0aa-4610-92eb-bf0b3b266888" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/diagram/Class Diagram0.asta.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diagram/ER.mwb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diagram/ER.mwb.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/classes/DTO/typePerson.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/enums/Origin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diagram/Class Diagram0.asta" beforeDir="false" afterPath="$PROJECT_DIR$/diagram/Class Diagram0.asta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bd/sql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/bd/sql.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/classes/BO/PeopleBO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/classes/DAO/PeopleDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/classes/DTO/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/classes/DTO/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/classes/DTO/Building.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/classes/DTO/Building.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/classes/DTO/Deal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/classes/DTO/Deal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/classes/DTO/Funnel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/classes/DTO/Funnel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/classes/DTO/Lead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/classes/DTO/Lead.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/classes/DTO/People.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/classes/DTO/People.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/classes/DTO/PeopleLeads.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/classes/DTO/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/classes/DTO/Permission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/classes/DTO/Permission.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/classes/DTO/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/classes/DTO/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/classes/DTO/owner.java" beforeDir="false" />
-    </list>
+    <list default="true" id="7440bcea-c0aa-4610-92eb-bf0b3b266888" name="Changes" comment="Iniciando projeto final de POO1 - imobiliaria" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,6 +50,21 @@
       <option name="presentableId" value="Default" />
       <updated>1668899005043</updated>
     </task>
+    <task id="LOCAL-00001" summary="Iniciando projeto final de POO1 - imobiliaria">
+      <created>1670419130649</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1670419130649</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Iniciando projeto final de POO1 - imobiliaria">
+      <created>1670419137263</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670419137263</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -86,5 +80,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Iniciando projeto final de POO1 - imobiliaria" />
+    <option name="LAST_COMMIT_MESSAGE" value="Iniciando projeto final de POO1 - imobiliaria" />
   </component>
 </project>
