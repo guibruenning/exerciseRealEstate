@@ -20,7 +20,10 @@ public class UserDAO {
         Connection conn = ConnectionReal.getConnection();
         PermissionBO permissionBO = new PermissionBO();
         User_Has_PermissionBO user_has_permissionBO = new User_Has_PermissionBO();
-        if(select(user.getName()) != null) return false;
+
+        if(select(user.getName()) != null)
+            if(select(user.getName()).getIdUser() != 0) return false;
+
         String sql = "INSERT INTO " + NOMEDATABELA + " (name, email, phone) VALUES (?, ?, ?);";
         try {
             PreparedStatement ps = conn.prepareStatement(sql);

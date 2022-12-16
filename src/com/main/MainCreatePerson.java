@@ -20,7 +20,7 @@ public class MainCreatePerson {
         UserBO userBO = new UserBO();
 
 
-        person.setName("Teste");
+        person.setName("Testeasdlas");
         person.setEmail("teste@teste.com");
         person.setPhone(999999999);
         person.setBirth(Util.StringToDate("1999-01-01"));
@@ -54,7 +54,8 @@ public class MainCreatePerson {
 
         PersonBO personBO = new PersonBO();
 
-        personBO.insert(person);
+        boolean ok = personBO.insert(person);
 
+        System.out.println("A inserçao no bd deu " + (ok ? "certo" : "errado, já existe um registro ou deu erro no banco de dados"));
     }
 }

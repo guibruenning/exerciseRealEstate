@@ -5,58 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7440bcea-c0aa-4610-92eb-bf0b3b266888" name="Changes" comment="Iniciando projeto final de POO1 - imobiliaria">
-      <change afterPath="$PROJECT_DIR$/src/com/BO/AccountBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/BO/PermissionBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/BO/PersonBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/BO/Person_Has_TypePersonBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/BO/StageBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/BO/UserBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/BO/User_Has_PermissionBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/DAO/AccountDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/DAO/PermissionDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/DAO/PersonDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/DAO/Person_Has_TypePersonDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/DAO/StageDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/DAO/TypePersonDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/DAO/UserDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/DAO/User_Has_PermissionDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/DTO/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/DTO/Building.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/DTO/Deal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/DTO/Funnel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/DTO/Lead.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/DTO/People.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/DTO/Permission.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/DTO/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/DTO/Stage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/DTO/TypePerson.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/DTO/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/connection/ConnectionReal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/main/MainCreatePerson.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/main/MainCreateUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/util/Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diagram/Class Diagram0.asta.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diagram/diagramGuilhermeBruenning.png.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diagram/Class Diagram0.asta" beforeDir="false" afterPath="$PROJECT_DIR$/diagram/Class Diagram0.asta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diagram/Class Diagram0.asta.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/diagram/ER.mwb" beforeDir="false" afterPath="$PROJECT_DIR$/diagram/ER.mwb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diagram/ER.mwb.bak" beforeDir="false" afterPath="$PROJECT_DIR$/diagram/ER.mwb.bak" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exerciseRealEstate.iml" beforeDir="false" afterPath="$PROJECT_DIR$/exerciseRealEstate.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bd/sql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/bd/sql.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/classes/BO/StageBO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/classes/DAO/StageDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/classes/DTO/Account.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/classes/DTO/Building.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/classes/DTO/Deal.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/classes/DTO/Funnel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/classes/DTO/Lead.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/classes/DTO/People.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/classes/DTO/Permission.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/classes/DTO/Person.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/classes/DTO/Stage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/classes/DTO/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/classes/DTO/typePerson.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/classes/connection/ConnctionReal.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/enums/Origin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/enums/Origin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagram/diagramGuilhermeBruenning.png" beforeDir="false" afterPath="$PROJECT_DIR$/diagram/diagramGuilhermeBruenning.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exerciseRealEstate.eml" beforeDir="false" afterPath="$PROJECT_DIR$/exerciseRealEstate.eml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exerciseRealEstate.userlibraries" beforeDir="false" afterPath="$PROJECT_DIR$/exerciseRealEstate.userlibraries" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/BO/PersonBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/BO/PersonBO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/DAO/AccountDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/DAO/AccountDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/DAO/PersonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/DAO/PersonDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/DAO/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/DAO/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/DTO/Permission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/DTO/Permission.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/DTO/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/DTO/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/DTO/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/DTO/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/main/MainCreatePerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/main/MainCreatePerson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/main/MainCreateUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/main/MainCreateUser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

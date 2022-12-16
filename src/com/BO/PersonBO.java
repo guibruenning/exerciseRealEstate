@@ -7,19 +7,19 @@ import java.util.List;
 
 public class PersonBO {
 
-    public void insert(Person person) {
+    public boolean insert(Person person) {
         PersonDAO personDAO = new PersonDAO();
-        personDAO.insert(person);
+        return personDAO.insert(person);
     }
 
-    public void update(Person person) {
+    public boolean update(Person person) {
         PersonDAO personDAO = new PersonDAO();
-        personDAO.update(person);
+        return personDAO.update(person);
     }
 
-    public void delete(Person person) {
+    public boolean delete(Person person) {
         PersonDAO personDAO = new PersonDAO();
-        personDAO.delete(person);
+        return personDAO.delete(person);
     }
 
     public Person select(int id) {

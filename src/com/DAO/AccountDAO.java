@@ -20,7 +20,6 @@ public class AccountDAO {
         Connection conn = ConnectionReal.getConnection();
         String sql = "INSERT INTO " + NOMEDATABELA + " (agency, agencyDigit, accountNumber, accountNumberDigit, bankName, bankNumber, type) VALUES (?, ?, ?, ?, ?, ?, ?);";
 
-        System.out.println("Entrou no insert");
         try {
             PreparedStatement ps = conn.prepareStatement(sql);
             ps.setInt(1, account.getAgency());

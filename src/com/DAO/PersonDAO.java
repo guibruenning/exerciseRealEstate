@@ -5,6 +5,7 @@ import com.BO.Person_Has_TypePersonBO;
 import com.BO.UserBO;
 import com.DTO.Account;
 import com.DTO.Person;
+import com.DTO.User;
 import com.connection.ConnectionReal;
 import com.util.Util;
 
@@ -18,12 +19,13 @@ import java.util.List;
 public class PersonDAO {
     final String TABLE_NAME = "person";
 
-    public void insert(Person person) {
+    public boolean insert(Person person) {
         Connection conn = ConnectionReal.getConnection();
         Person_Has_TypePersonBO person_has_typePersonBO = new Person_Has_TypePersonBO();
         AccountBO accountBO = new AccountBO();
         UserBO userBO = new UserBO();
-
+        if(this.select(person.getName(), person.getEmail()) != null)
+            if (this.select(person.getName(), person.getEmail()).getIdPerson() != 0) return false;
         String sql = "INSERT INTO " + TABLE_NAME + " (name, email, phone, birth, cpf_cnpj, street, district, number, complement, city, state, country, origin, creci, idAccount, idPickup) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
 
         try {
@@ -43,25 +45,28 @@ public class PersonDAO {
             ps.setInt(13, person.getOrigin().getValue());
             ps.setString(14, person.getCreci());
 
-            if(accountBO.select(person.getAccount()).getAccountNumber() == 0)
+            if(accountBO.select(person.getAccount()).getAccountNumber() == 0 && person.getAccount().getAccountNumber() != 0) {
                 accountBO.insert(person.getAccount());
+            }
 
             ps.setInt(15, accountBO.select(person.getAccount()).getIdAccount());
 
-            if(person.getPickup() != null)
+            if(person.getPickup() != null &&  userBO.select(person.getPickup().getName()).getIdUser() == 0) {
                 userBO.insert(person.getPickup());
-
+            }
             ps.setInt(16, userBO.select(person.getPickup()).getIdUser());
             ps.executeUpdate();
 
             ps.close();
             conn.close();
+            return true;
         } catch (Exception e) {
             e.printStackTrace();
+            return false;
         }
     }
 
-    public void update(Person person) {
+    public boolean update(Person person) {
         Connection conn = ConnectionReal.getConnection();
         Person_Has_TypePersonBO person_has_typePersonBO = new Person_Has_TypePersonBO();
         AccountBO accountBO = new AccountBO();
@@ -95,12 +100,15 @@ public class PersonDAO {
 
             ps.close();
             conn.close();
+
+            return true;
         } catch (Exception e) {
             e.printStackTrace();
+            return false;
         }
     }
 
-    public void delete(Person person) {
+    public boolean delete(Person person) {
         Connection conn = ConnectionReal.getConnection();
 
         String sql = "DELETE FROM " + TABLE_NAME + " WHERE id = ?;";
@@ -111,8 +119,10 @@ public class PersonDAO {
             ps.executeUpdate();
             ps.close();
             conn.close();
+            return true;
         } catch (Exception e) {
             e.printStackTrace();
+            return false;
         }
     }
 
@@ -153,6 +163,46 @@ public class PersonDAO {
             e.printStackTrace();
         }
         return list;
+    }
+
+    public Person select(String name, String email){
+        Connection conn = ConnectionReal.getConnection();
+
+        String sql = "SELECT * FROM " + TABLE_NAME + " WHERE name = ? AND email = ?;";
+        AccountBO accountBO = new AccountBO();
+
+        Person person = new Person();
+
+        try {
+            PreparedStatement ps = conn.prepareStatement(sql);
+            ps.setString(1, name);
+            ps.setString(2, email);
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()) {
+                person.setIdPerson(rs.getInt("idPerson"));
+                person.setName(rs.getString("name"));
+                person.setEmail(rs.getString("email"));
+                person.setPhone(rs.getInt("phone"));
+                person.setBirth(Util.dateSqltoDateUtil(rs.getDate("birth")));
+                person.setCpf_cnpj(rs.getInt("cpf_cnpj"));
+                person.setStreet(rs.getString("street"));
+                person.setDistrict(rs.getString("district"));
+                person.setNumber(rs.getInt("number"));
+                person.setComplement(rs.getString("complement"));
+                person.setCity(rs.getString("city"));
+                person.setState(rs.getString("state"));
+                person.setCountry(rs.getString("country"));
+                person.setOrigin(Util.getOrigin(rs.getInt("origin")));
+                person.setCreci(rs.getString("creci"));
+                person.setAccount(accountBO.select(rs.getInt("idAccount")));
+            }
+            ps.close();
+            conn.close();
+            return person;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 
     public Person selectId(int id) {

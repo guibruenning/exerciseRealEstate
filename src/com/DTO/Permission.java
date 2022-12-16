@@ -6,7 +6,7 @@ public class Permission {
 
 	private String name;
 
-	private Permission permissionDad;
+	protected Permission permissionDad;
 
 	public int getIdPermission() {
 		return idPermission;

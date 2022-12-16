@@ -33,9 +33,9 @@ public class Person extends People {
 
 	private Account account;
 
-	private User pickup;
+	protected User pickup;
 
-	private List<TypePerson> typePersonList;
+	protected List<TypePerson> typePersonList;
 
 	public int getIdPerson() {
 		return idPerson;

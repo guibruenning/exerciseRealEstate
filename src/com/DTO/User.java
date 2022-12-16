@@ -6,7 +6,7 @@ public class User extends People {
 
 	private int idUser;
 
-	private List<Permission> permissionList;
+	protected List<Permission> permissionList;
 	public boolean login(String name, String password) {
 		return false;
 	}

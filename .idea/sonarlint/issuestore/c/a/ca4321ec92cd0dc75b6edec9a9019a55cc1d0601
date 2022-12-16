@@ -1,0 +1,12 @@
+
+]
+java:S2259"GA "NullPointerException" could be thrown; "hexString" is nullable here.(£ðÓÂ
+P
+java:S1118
+":Add a private constructor to hide the implicit public one.(×¼­Æ
+E
+java:S1197"*Move the array designators [] to the type.(ÚñÇ¿ùÿÿÿÿ
+?
+java:S1905")Remove this unnecessary cast to "String".(£ðÓÂ
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ê«Â¢ÿÿÿÿÿ
+b	java:S100'"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰éÊ/

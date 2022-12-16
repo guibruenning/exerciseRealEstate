@@ -1,6 +1,5 @@
 package com.main;
 
-import com.BO.PersonBO;
 import com.BO.UserBO;
 import com.DTO.Permission;
 import com.DTO.User;
@@ -30,7 +29,6 @@ public class MainCreateUser {
         System.out.println(user);
 
         UserBO userBO = new UserBO();
-
         userBO.insert(user);
 
 
