@@ -5,18 +5,18 @@ SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
 
 -- -----------------------------------------------------
--- Schema realState
+-- Schema realstate
 -- -----------------------------------------------------
-DROP SCHEMA IF EXISTS `realState` ;
+DROP SCHEMA IF EXISTS `realstate` ;
 
 -- -----------------------------------------------------
--- Schema realState
+-- Schema realstate
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `realState` DEFAULT CHARACTER SET utf8 ;
+CREATE SCHEMA IF NOT EXISTS `realstate` DEFAULT CHARACTER SET utf8 ;
 USE `realState` ;
 
 -- -----------------------------------------------------
--- Table `realState`.`account`
+-- Table `realState`.`account` V
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `realState`.`account` (
   `idAccount` INT NOT NULL AUTO_INCREMENT,
@@ -32,7 +32,19 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `realState`.`person`
+-- Table `realState`.`user` V
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `realState`.`user` (
+  `idUser` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(45) NOT NULL,
+  `email` VARCHAR(45) NULL,
+  `phone` INT NULL,
+  PRIMARY KEY (`idUser`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `realState`.`person` v
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `realState`.`person` (
   `idPerson` INT NOT NULL AUTO_INCREMENT,
@@ -51,18 +63,25 @@ CREATE TABLE IF NOT EXISTS `realState`.`person` (
   `origin` INT NULL,
   `creci` VARCHAR(45) NULL,
   `idAccount` INT NULL,
+  `idPickup` INT NULL,
   PRIMARY KEY (`idPerson`),
   INDEX `fk_Person_Account1_idx` (`idAccount` ASC),
+  INDEX `fk_person_user1_idx` (`idPickup` ASC),
   CONSTRAINT `fk_Person_Account1`
     FOREIGN KEY (`idAccount`)
     REFERENCES `realState`.`account` (`idAccount`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_person_user1`
+    FOREIGN KEY (`idPickup`)
+    REFERENCES `realState`.`user` (`idUser`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `realState`.`typePerson`
+-- Table `realState`.`typePerson` v
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `realState`.`typePerson` (
   `idTypePerson` INT NOT NULL AUTO_INCREMENT,
@@ -72,7 +91,7 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `realState`.`person_has_typePerson`
+-- Table `realState`.`person_has_typePerson` v
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `realState`.`person_has_typePerson` (
   `idPerson` INT NOT NULL,
@@ -151,18 +170,6 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `realState`.`user`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `realState`.`user` (
-  `idUser` INT NOT NULL AUTO_INCREMENT,
-  `name` VARCHAR(45) NOT NULL,
-  `email` VARCHAR(45) NULL,
-  `phone` INT NULL,
-  PRIMARY KEY (`idUser`))
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
 -- Table `realState`.`stage`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `realState`.`stage` (
@@ -233,11 +240,11 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `realState`.`permission` (
   `idPermission` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) NOT NULL,
-  `idPermissionDad` INT NULL,
+  `idDadPermission` INT NULL,
   PRIMARY KEY (`idPermission`),
   INDEX `fk_permission_permission1_idx` (`idPermission` ASC),
   CONSTRAINT `fk_permission_permission1`
-    FOREIGN KEY (`idPermissionDad`)
+    FOREIGN KEY (`idDadPermission`)
     REFERENCES `realState`.`permission` (`idPermission`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)

@@ -4,7 +4,60 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7440bcea-c0aa-4610-92eb-bf0b3b266888" name="Changes" comment="Iniciando projeto final de POO1 - imobiliaria" />
+    <list default="true" id="7440bcea-c0aa-4610-92eb-bf0b3b266888" name="Changes" comment="Iniciando projeto final de POO1 - imobiliaria">
+      <change afterPath="$PROJECT_DIR$/src/com/BO/AccountBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/BO/PermissionBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/BO/PersonBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/BO/Person_Has_TypePersonBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/BO/StageBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/BO/UserBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/BO/User_Has_PermissionBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/DAO/AccountDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/DAO/PermissionDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/DAO/PersonDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/DAO/Person_Has_TypePersonDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/DAO/StageDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/DAO/TypePersonDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/DAO/UserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/DAO/User_Has_PermissionDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/DTO/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/DTO/Building.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/DTO/Deal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/DTO/Funnel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/DTO/Lead.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/DTO/People.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/DTO/Permission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/DTO/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/DTO/Stage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/DTO/TypePerson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/DTO/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/connection/ConnectionReal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/main/MainCreatePerson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/main/MainCreateUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/util/Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagram/Class Diagram0.asta" beforeDir="false" afterPath="$PROJECT_DIR$/diagram/Class Diagram0.asta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagram/Class Diagram0.asta.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagram/ER.mwb" beforeDir="false" afterPath="$PROJECT_DIR$/diagram/ER.mwb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagram/ER.mwb.bak" beforeDir="false" afterPath="$PROJECT_DIR$/diagram/ER.mwb.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exerciseRealEstate.iml" beforeDir="false" afterPath="$PROJECT_DIR$/exerciseRealEstate.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bd/sql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/bd/sql.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/classes/BO/StageBO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/classes/DAO/StageDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/classes/DTO/Account.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/classes/DTO/Building.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/classes/DTO/Deal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/classes/DTO/Funnel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/classes/DTO/Lead.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/classes/DTO/People.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/classes/DTO/Permission.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/classes/DTO/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/classes/DTO/Stage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/classes/DTO/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/classes/DTO/typePerson.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/classes/connection/ConnctionReal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/enums/Origin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/enums/Origin.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +66,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -32,15 +85,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/tudo/2022/POO1/codigos/enum"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/tudo/2022/POO1/codigos/Aulas&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager">
+    <configuration name="MainCreatePerson" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.main.MainCreatePerson" />
+      <module name="exerciseRealEstate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainCreateUser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.main.MainCreateUser" />
+      <module name="exerciseRealEstate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MainCreateUser" />
+        <item itemvalue="Application.MainCreatePerson" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

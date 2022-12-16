@@ -1,5 +1,5 @@
-package com.classes.DTO;
-public class typePerson {
+package com.DTO;
+public class TypePerson {
 
 	private int idTypePerson;
 

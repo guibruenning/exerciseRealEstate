@@ -1,4 +1,4 @@
-package com.classes.DTO;
+package com.DTO;
 public class Account {
 
 	private int idAccount;
@@ -15,7 +15,7 @@ public class Account {
 
 	private int bankNumber;
 
-	private char Type;
+	private String Type;
 
 	public int getIdAccount() {
 		return idAccount;
@@ -73,11 +73,11 @@ public class Account {
 		this.bankNumber = bankNumber;
 	}
 
-	public char getType() {
+	public String getType() {
 		return Type;
 	}
 
-	public void setType(char type) {
+	public void setType(String type) {
 		Type = type;
 	}
 

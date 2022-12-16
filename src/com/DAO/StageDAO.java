@@ -1,7 +1,7 @@
-package com.classes.DAO;
+package com.DAO;
 
-import com.classes.DTO.Stage;
-import com.classes.connection.ConnctionReal;
+import com.DTO.Stage;
+import com.connection.ConnectionReal;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -15,7 +15,7 @@ public class StageDAO {
 
     public boolean insert(Stage stage) {
         try {
-            Connection conn = ConnctionReal.getConnection();
+            Connection conn = ConnectionReal.getConnection();
             String sql = "INSERT INTO " + NOMEDATABELA + " (name) VALUES (?);";
             PreparedStatement ps = conn.prepareStatement(sql);
             ps.setString(1, stage.getName());
@@ -30,11 +30,11 @@ public class StageDAO {
     }
     public boolean update(Stage stage) {
         try {
-            Connection conn = ConnctionReal.getConnection();
+            Connection conn = ConnectionReal.getConnection();
             String sql = "UPDATE " + NOMEDATABELA + " SET name = ? WHERE id = ?;";
             PreparedStatement ps = conn.prepareStatement(sql);
             ps.setString(1, stage.getName());
-            ps.setInt(2, stage.getId());
+            ps.setInt(2, stage.getIdStage());
             ps.executeUpdate();
             ps.close();
             conn.close();
@@ -47,10 +47,10 @@ public class StageDAO {
 
     public boolean delete(Stage stage) {
         try {
-            Connection conn = ConnctionReal.getConnection();
+            Connection conn = ConnectionReal.getConnection();
             String sql = "DELETE FROM " + NOMEDATABELA + " WHERE id = ?;";
             PreparedStatement ps = conn.prepareStatement(sql);
-            ps.setInt(1, stage.getId());
+            ps.setInt(1, stage.getIdStage());
             ps.executeUpdate();
             ps.close();
             conn.close();
@@ -63,13 +63,13 @@ public class StageDAO {
 
     public Stage searchId(Stage stage) {
         try {
-            Connection conn = ConnctionReal.getConnection();
+            Connection conn = ConnectionReal.getConnection();
             String sql = "SELECT * FROM " + NOMEDATABELA + " WHERE id = ?;";
             PreparedStatement ps = conn.prepareStatement(sql);
-            ps.setInt(1, stage.getId());
+            ps.setInt(1, stage.getIdStage());
             ResultSet rs = ps.executeQuery();
             if (rs.next()) {
-                stage.setId(rs.getInt("id"));
+                stage.setIdStage(rs.getInt("id"));
                 stage.setName(rs.getString("name"));
             }
             rs.close();
@@ -84,14 +84,14 @@ public class StageDAO {
 
     public List<Stage> litsStage() {
         try {
-            Connection conn = ConnctionReal.getConnection();
+            Connection conn = ConnectionReal.getConnection();
             String sql = "SELECT * FROM " + NOMEDATABELA + ";";
             PreparedStatement ps = conn.prepareStatement(sql);
             ResultSet rs = ps.executeQuery();
             List<Stage> lista = new ArrayList<Stage>();
             while (rs.next()) {
                 Stage stage = new Stage();
-                stage.setId(rs.getInt("id"));
+                stage.setIdStage(rs.getInt("id"));
                 stage.setName(rs.getString("name"));
                 lista.add(stage);
             }
@@ -108,10 +108,10 @@ public class StageDAO {
 
     public boolean exists(Stage stage) {
         try {
-            Connection conn = ConnctionReal.getConnection();
+            Connection conn = ConnectionReal.getConnection();
             String sql = "SELECT * FROM " + NOMEDATABELA + " WHERE id = ?;";
             PreparedStatement ps = conn.prepareStatement(sql);
-            ps.setInt(1, stage.getId());
+            ps.setInt(1, stage.getIdStage());
             ResultSet rs = ps.executeQuery();
             if (rs.next()) {
                 return true;

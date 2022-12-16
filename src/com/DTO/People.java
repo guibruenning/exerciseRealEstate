@@ -1,4 +1,4 @@
-package com.classes.DTO;
+package com.DTO;
 
 public class People {
 

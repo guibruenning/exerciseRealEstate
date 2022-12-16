@@ -1,6 +1,9 @@
-package com.classes.DTO;
+package com.DTO;
+
+import com.enums.Origin;
 
 import java.util.Date;
+import java.util.List;
 
 public class Person extends People {
 
@@ -24,17 +27,15 @@ public class Person extends People {
 
 	private String country;
 
-	private Enum origin;
+	private Origin origin;
 
 	private String creci;
 
-	public int age() {
-		return 0;
-	}
+	private Account account;
 
-	public boolean isExists(String name) {
-		return false;
-	}
+	private User pickup;
+
+	private List<TypePerson> typePersonList;
 
 	public int getIdPerson() {
 		return idPerson;
@@ -116,11 +117,11 @@ public class Person extends People {
 		this.country = country;
 	}
 
-	public Enum getOrigin() {
+	public Origin getOrigin() {
 		return origin;
 	}
 
-	public void setOrigin(Enum origin) {
+	public void setOrigin(Origin origin) {
 		this.origin = origin;
 	}
 
@@ -132,9 +133,33 @@ public class Person extends People {
 		this.creci = creci;
 	}
 
+	public Account getAccount() {
+		return account;
+	}
+
+	public void setAccount(Account account) {
+		this.account = account;
+	}
+
+	public User getPickup() {
+		return pickup;
+	}
+
+	public void setPickup(User pickup) {
+		this.pickup = pickup;
+	}
+
+	public List<TypePerson> getTypePersonList() {
+		return typePersonList;
+	}
+
+	public void setTypePersonList(List<TypePerson> typePersonList) {
+		this.typePersonList = typePersonList;
+	}
+
 	@Override
 	public String toString() {
-		final StringBuilder sb = new StringBuilder("com.classes.DTO.Person{");
+		final StringBuilder sb = new StringBuilder("com.DTO.Person{");
 		sb.append("idPerson=").append(idPerson);
 		sb.append(", birth=").append(birth);
 		sb.append(", cpf_cnpj=").append(cpf_cnpj);
@@ -145,8 +170,10 @@ public class Person extends People {
 		sb.append(", city='").append(city).append('\'');
 		sb.append(", state='").append(state).append('\'');
 		sb.append(", country='").append(country).append('\'');
-		sb.append(", origin=").append(origin);
 		sb.append(", creci='").append(creci).append('\'');
+		sb.append(", account=").append(account);
+		sb.append(", pickup=").append(pickup);
+		sb.append(", typePersonList=").append(typePersonList);
 		sb.append(", ").append(super.toString());
 		sb.append('}');
 		return sb.toString();

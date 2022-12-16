@@ -1,7 +1,7 @@
-package com.classes.BO;
+package com.BO;
 
-import com.classes.DAO.StageDAO;
-import com.classes.DTO.Stage;
+import com.DAO.StageDAO;
+import com.DTO.Stage;
 
 import java.util.List;
 
